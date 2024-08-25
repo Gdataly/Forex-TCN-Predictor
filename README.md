@@ -15,7 +15,7 @@ Error analysis and visualization tools
 To set up the Forex-TCN-Predictor, follow these steps:
 
 # Clone the repository:
-Copy git clone https://github.com/yourusername/Forex-TCN-Predictor.git
+Copy git clone https://github.com/Gdataly/Forex-TCN-Predictor.git
 
 # Usage
 To run the predictor:
