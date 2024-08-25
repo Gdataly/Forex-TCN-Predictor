@@ -1,5 +1,49 @@
 # Forex-TCN-Predictor
-Advanced forex price prediction model using Temporal Convolutional Networks (TCN). This project implements a sophisticated time series forecasting system for predicting forex close prices, specifically tailored for EUR/USD.
+
+## Introduction
+
+The Forex-TCN-Predictor is an advanced forex price prediction model using Temporal Convolutional Networks (TCN). This project implements a sophisticated time series forecasting system for predicting forex prices, specifically tailored for the EUR/USD pair. The current implementation focuses on predicting both high and low prices for the next two time steps (t+1 and t+2).
+
+## Project Evolution
+
+This project represents the culmination of extensive research and experimentation with various time series forecasting techniques. Our journey to develop an effective forex prediction model involved several iterations and different architectural approaches:
+
+1. **Traditional Time Series Models**: 
+   - Initially, we explored classic statistical methods like ARIMA and SARIMA.
+   - While these provided a solid baseline, they struggled to capture the complex non-linear patterns in forex data.
+
+2. **Recurrent Neural Networks (RNNs)**:
+   - We then moved to deep learning approaches, starting with simple RNNs.
+   - These showed improvement over statistical methods but suffered from the vanishing gradient problem for longer sequences.
+
+3. **Long Short-Term Memory (LSTM) Networks**:
+   - LSTMs were implemented to address the limitations of simple RNNs.
+   - They demonstrated better performance in capturing long-term dependencies in the forex data.
+   - However, training times were considerable, and the model sometimes struggled with very long input sequences.
+
+4. **Gated Recurrent Units (GRUs)**:
+   - We experimented with GRUs as a more computationally efficient alternative to LSTMs.
+   - Performance was comparable to LSTMs, with slightly faster training times.
+
+5. **Convolutional Neural Networks (CNNs)**:
+   - We also explored 1D CNNs for time series forecasting.
+   - These showed promise in capturing local patterns but struggled with longer-term dependencies.
+
+6. **Temporal Convolutional Networks (TCNs)**:
+   - Finally, we implemented TCNs, which combine the strengths of CNNs and RNNs.
+   - TCNs demonstrated superior performance in terms of prediction accuracy and computational efficiency.
+   - They excelled in capturing both short-term and long-term patterns in the forex data.
+
+After extensive comparison and evaluation, the TCN-based model emerged as the most effective approach for our forex prediction task. It offered the best balance of prediction accuracy, ability to handle long sequences, and computational efficiency.
+
+## Key Advantages of the TCN Model
+
+1. **Parallelism**: Unlike RNNs, TCNs can process input sequences in parallel, leading to faster training and inference times.
+2. **Flexible Receptive Field**: The dilated convolutions in TCNs allow for a large receptive field, capturing long-range dependencies effectively.
+3. **Stable Gradients**: TCNs don't suffer from vanishing/exploding gradients, a common issue with RNNs and LSTMs.
+4. **Precise Control Over Memory**: The model's memory length is precisely determined by the architecture, offering better control compared to RNNs.
+
+The current implementation of Forex-TCN-Predictor leverages these advantages to provide accurate and reliable forex price predictions, as evidenced by its impressive performance metrics.
 
 # Description
 Forex-TCN-Predictor is an advanced forex price prediction model leveraging Temporal Convolutional Networks (TCN) for time series forecasting. Specifically designed for EUR/USD High, Low and close price prediction, this project implements state-of-the-art techniques in deep learning and financial time series analysis.
