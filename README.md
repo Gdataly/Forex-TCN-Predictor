@@ -2,7 +2,7 @@
 Advanced forex price prediction model using Temporal Convolutional Networks (TCN). This project implements a sophisticated time series forecasting system for predicting forex close prices, specifically tailored for EUR/USD.
 
 # Description
-Forex-TCN-Predictor is an advanced forex price prediction model leveraging Temporal Convolutional Networks (TCN) for time series forecasting. Specifically designed for EUR/USD close price prediction, this project implements state-of-the-art techniques in deep learning and financial time series analysis.
+Forex-TCN-Predictor is an advanced forex price prediction model leveraging Temporal Convolutional Networks (TCN) for time series forecasting. Specifically designed for EUR/USD High, Low and close price prediction, this project implements state-of-the-art techniques in deep learning and financial time series analysis.
 Features
 Custom TCN architecture with integrated time-based features
 Comprehensive feature engineering including technical indicators
@@ -22,7 +22,7 @@ To run the predictor:
 Prepare your forex data in CSV format with columns: Date, Time, Open, High, Low, Close, Volume.
 Update the file_path variable in the main script with your data file path.
 Run the main script:
-Copypython forex_tcn_predictor.py
+python forex_tcn_predictor.py
 
 
 # Data
